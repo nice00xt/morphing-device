@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>animacion dispositivos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/dispositivos.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+   
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+
+
+    <div class="container">
+
+      <!-- Static navbar -->
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+             <a class="navbar-brand" href="https://twitter.com/juan00xt"> <i class="fa fa-twitter"></i> nice00xt</a>
+
+
+          </div>
+
+        </div><!--/.container-fluid -->
+      </div>
+
+      <!-- Main component for a primary marketing message or call to action -->
+
+
+    </div> <!-- /container -->
+
+    <div class="container">
+    <div class="cuadro">
+
+ <div class="dispositivo">
+        <div class="carcasa">
+                <div class="pantalla"></div>
+                <div class="sam"><img src="img/log_sam.png" alt=""></div>
+                <div class="lg"><img src="img/log_htc.png" alt=""></div>
+                <div class="botoncito"></div>
+        </div>
+        <div class="base">
+                <div class="apple"><i class="fa fa-apple"></i></div>
+        </div>
+        <div class="soporte"></div>
+        <div class="sop2"></div>
+</div> <!--dispositivo-->
+</div>
+    </div> <!-- /container -->
+
+
+          <div class="jumbotron">
+                 <div class="clasific">
+         <ul>
+          <li3><img src="img/html5.png" alt=""></li3>
+           <li1><img src="img/css3.png" alt=""></li1>
+           <li2><img src="img/javascript.png" alt=""></li2>
+           
+         </ul>
+       </div>
+        <h1>Morphin Device</h1>
+        <p>Dispositivos hechos enteramente en css3 cada uno, y animados con jquery</p>
+          <!--a class="btn btn-lg btn-primary" href="#" role="button">ver tutorial &raquo;</a-->
+
+      </div>
+
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ads -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2870687972453895"
+     data-ad-slot="4920190487"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<script>
+//declaramos variables primero hacer los cambios facilmente
+   var duration = 5000, // duracion en milisegundos sin efecto despues de cada animacion.
+       step = 1; //veces que se cumplira la funcion.
+       steps = 4, //esta variable representa hasta cuantos atributos tenemos en el css.
+  
+//utilizamos la funcion setInterval para que nuestra animacion se cumpla cada cierto tiempo 
+//el cual ya declaramos en nuestras variables.
+   setInterval( function() {
+//con document.querySelector seleccionamos al la clase madre de todos los elementos en el.
+//.setAttribute creara el atributo que hemos nombrado en el css y lo colocara en la clase .dispositivo que hemos seleccionado con jqueryselector
+//el valor que tienen los atributos cambiara con el bucle "for" que creamos 
+    document.querySelector( '.dispositivo' ).setAttribute( 'data-animation-step', step = ++step > steps ? 1 : step );
+  }, duration / steps );
+   //al final no estan mas que los valores del setInterval.
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ads -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2870687972453895"
+     data-ad-slot="4920190487"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
+</html>
