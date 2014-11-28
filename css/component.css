@@ -728,7 +728,9 @@ perspective effects (not including the modals and the overlay).
 	-moz-transition: all 0.5s 0.1s;
 	transition: all 0.5s 0.1s;
 }
-
+.adsbygoogle{
+	display: none !important;
+}
 @media screen and (max-width: 32em) {
 	body { font-size: 75%; }
 }
